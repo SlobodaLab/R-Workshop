@@ -56,7 +56,7 @@ The ProjectTemplate package will create a project template in your working direc
 by adding/removing folders as required. A minimal project template should include: 
 
 | Folder | Contents |
-------------------------
+| --- | --- |
 | data/ | Input data files. It is a good idea to create a `raw/` subfolder to store all your raw data. |
 | results/ | Output results files (e.g. statistical test results) |
 | figures/ | Save figures to this folder | 
@@ -69,7 +69,7 @@ Your project settings are saved and edited in the file `global.dcf` as shown bel
 
 ![](images/global-config.PNG)
 
-| | |
+| Setting | Options |
 | --- | --- |
 | data_loading | TRUE / FALSE : controls whether files in your `data\` folder are loaded automatically into RStudio |
 | data_ignore | add the folder `raw\` to prevent raw data files from being loading into RStudio |
