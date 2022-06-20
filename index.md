@@ -25,7 +25,7 @@ Install R by downloading and running [this .pkg file](http://cran.r-project.org/
 
 |  |  |
 | --- | --- |
-| Introduction   | Why use R? Getting oriented in RStudio. Seeking help.   |
+| [Introduction](Introduction.md)   | Why use R? Getting oriented in RStudio. Seeking help.   |
 | Data Organization in Spreadsheets      | How do we effectively format data in spreadsheets? |
 | Data formatting problems      | What are some common challenges and how to we avoid them?      |
 | Starting with data in R   | Loading data. Intro to the Tidyverse. Manipulating data.  |
