@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+## Sloboda Lab R Workshop
 
-You can use the [editor on GitHub](https://github.com/SlobodaLab/R-Workshop/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+June 27 and July 4, 2022
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### General Info
 
-### Markdown
+These workshops will borrow heavily from Software Carpentry workshops (see [here](https://jcszamosi.github.io/2017-07-27-McMaster/)) but are aimed at learning how to use R for specific analyses that are common in the Sloboda Lab. You do not need to have any previous knowledge of R to participate. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**Requirements:** A laptop with running a Windows or Mac operating system on which you have administrative priviledges. Starting June 27th you must have all the required software installed. If you would like help installing any of this software, please attend the software installation party on June 20th after lab meeting. 
 
-```markdown
-Syntax highlighted code block
+## R Setup
+[R](http://www.r-project.org/) is a programming language that is especially powerful for data exploration, visualization, and statistical analysis. To interact with R, we use [RStudio](http://www.rstudio.com/).
 
-# Header 1
-## Header 2
-### Header 3
+If you have previously installed R and/or RStudio, please make sure if at all possible that you have the most up-to-date versions. If your current R version is 3.2.5 or older, you will need to re-install packages and will get the latest versions of all packages by default; please be careful if you depend on a particular release of a package.
 
-- Bulleted
-- List
+**Windows:** 
+[Video Tutorial](https://www.youtube.com/watch?v=q0PjTAylwoU)
+Install R by downloading and running [this .exe file](http://cran.r-project.org/bin/windows/base/release.htm) from [CRAN](http://cran.r-project.org/index.html). Also, please install [RStudio](http://www.rstudio.com/ide/download/desktop). Note that if you have separate user and admin accounts, you should run the installers as administrator (right-click on .exe file and select "Run as administrator" instead of double-clicking). Otherwise problems may occur later, for example when installing R packages.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SlobodaLab/R-Workshop/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+**Mac OS:**
+[Video Tutorial](https://www.youtube.com/watch?v=5-ly3kyxwEg)
+Install R by downloading and running [this .pkg file](http://cran.r-project.org/bin/macosx/R-latest.pkg) from [CRAN](http://cran.r-project.org/index.html). Also, please install [RStudio](http://www.rstudio.com/ide/download/desktop).
