@@ -26,8 +26,7 @@ Install R by downloading and running [this .pkg file](http://cran.r-project.org/
 |  |  |
 | --- | --- |
 | [Introduction](Introduction.md)   | Why use R? Getting oriented in RStudio. Seeking help.   |
-| Data Organization in Spreadsheets      | How do we effectively format data in spreadsheets? |
-| Data formatting problems      | What are some common challenges and how to we avoid them?      |
-| Starting with data in R   | Loading data. Intro to the Tidyverse. Manipulating data.  |
-| Visualizing data   | Intro to ggplot2. Building plots. Customizing plots.  |
-| Statistical tests | Intro to linear models in R. |
+| [Data Organization in Spreadsheets](data-organization.md)      | How do we effectively format data in spreadsheets? |
+| [Starting with data in R](starting-in-R.md)   | Loading data. Intro to the Tidyverse. Manipulating data.  |
+| [Visualizing data](visualizing-data.md)   | Intro to ggplot2. Building plots. Customizing plots.  |
+| [Stats in R](stats-in-R.md) | Intro to linear models in R. |
