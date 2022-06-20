@@ -71,7 +71,7 @@ generate.
 
 ![RStudio interface screenshot. Clockwise from top left: Source,
 Environment/History, Files/Plots/Packages/Help/Viewer,
-Console.](images/RStudio-screenshot.png)
+Console.](images/RStudio-screenshot.PNG)
 
 RStudio is divided into 4 "panes":
 
