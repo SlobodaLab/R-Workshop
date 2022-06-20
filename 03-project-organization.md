@@ -52,4 +52,32 @@ create.project() #only run this one time to create your project
 load.project() #run this every time you open your project
 ```
 
+The ProjectTemplate package will create a project template in your working directory. You can customize this template
+by adding/removing folders as required. A minimal project template should include: 
+
+| Folder | Contents |
+------------------------
+| data/ | Input data files. It is a good idea to create a `raw/` subfolder to store all your raw data. |
+| results/ | Output results files (e.g. statistical test results) |
+| figures/ | Save figures to this folder | 
+| config/ | holds the global.dcf file that specifies all the options for your project (see below) | 
+| munge/ | holds scripts to pre-process your data |
+
+**Project settings**
+To control what happens when you load your project you can modify your project settings. 
+Your project settings are saved and edited in the file `global.dcf` as shown below. 
+
+![](images/global-config.PNG)
+
+| | |
+--------------
+| data_loading | TRUE / FALSE : controls whether files in your `data\` folder are loaded automatically into RStudio |
+| data_ignore | add the folder `raw\` to prevent raw data files from being loading into RStudio |
+| cache_loading | TRUE / FALSE : change to FALSE to prevent previous outputs from being loaded |
+| munging | TRUE / FALSE : do you have pre-processing scripts that you want to run every time you load your project? |
+| load_libraries | TRUE / FALSE : set to TRUE so that all the packages you need are automatically loaded | 
+| libraries | list the packages that you need |
+
+### R Markdown
+
 
