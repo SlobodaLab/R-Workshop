@@ -1,6 +1,6 @@
 Adapted from [Data Carpentry R Ecology Lesson](https://datacarpentry.org/R-ecology-lesson/)
 --------------------------------------------------------------------------------
-
+ 
  ### Learning Objectives
 
  -   Be able to explain what R and RStudio are, what they are used for, and how
