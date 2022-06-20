@@ -41,3 +41,9 @@ ProjectTemplate is a system for automating the thoughtless parts of a data analy
 - Loading all the R packages you’ll use.
 - Loading all of your data sets into memory.
 - Munging and preprocessing your data into a form that’s suitable for analysis.
+
+```
+library("ProjectTemplate")
+create.project()
+load.project()
+```
