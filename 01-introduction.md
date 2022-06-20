@@ -94,6 +94,7 @@ developing in R, RStudio will make typing easier and less error-prone.
 
 ## Terminology
 
+
 | Term | Definition |
 ---------------------
 | Function | A piece of code that does something specific stored as an object | 
