@@ -46,7 +46,7 @@ statistical tests in your manuscript are updated automatically.
 
 There are over 10,000 packages that can be installed to extend the capabilities of R. Some of the packages that we will be using include:
 - the [Tidyverse](https://www.tidyverse.org/): a collection of packages designed for data science including [ggplot2](https://ggplot2.tidyverse.org/) for creating beautiful graphics
-- [ProjectTemplate](http://projecttemplate.net/index.html) for organizing your project (see [Project Organization](03-project-organization.md)
+- [ProjectTemplate](http://projecttemplate.net/index.html) for organizing your project (see [Project Organization](03-project-organization.md))
 - [here](https://here.r-lib.org/) to enable easy file referencing withing projects
 
 ### R produces high-quality graphics
