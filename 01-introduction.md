@@ -96,7 +96,7 @@ developing in R, RStudio will make typing easier and less error-prone.
 
 
 | Term | Definition |
----------------------
+| --- | --- |
 | Function | A piece of code that does something specific stored as an object | 
 | Data frame  | A table of data stored as an object. Each column contains the same type of data |
 
