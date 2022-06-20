@@ -91,3 +91,11 @@ One of the advantages of using RStudio is that all the information you need to
 write code is available in a single window. Additionally, with many shortcuts,
 autocompletion, and highlighting for the major file types you use while
 developing in R, RStudio will make typing easier and less error-prone.
+
+## Terminology
+
+| Term | Definition |
+---------------------
+| Function | A piece of code that does something specific stored as an object | 
+| Data frame  | A table of data stored as an object. Each column contains the same type of data |
+
