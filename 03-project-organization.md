@@ -80,4 +80,14 @@ Your project settings are saved and edited in the file `global.dcf` as shown bel
 
 ### R Markdown
 
+You can code in the console, but your code won't be saved and therefore won't be reproducible. You can also write in an R script saved
+as `file.R`, but this is best for short scripts that do **one** thing specifically. When you are organizing data, making plots, and 
+running stats it's easiest to organize your data in an R Markdown file saved as `file.Rmd`. You can also use R Markdown to automatically 
+generate reports - you could even write your thesis using R Markdown!
+
+The main benefit of R Markdown for analysis is that all your code is contained in "Code Chunks" and everything that is not in a code chunk
+is ignored when you run your code. You can/should write notes between chunks explaining what each chunk is for. 
+
+Learn more about R Markdown [here](https://rmarkdown.rstudio.com/lesson-1.html).
+
 
