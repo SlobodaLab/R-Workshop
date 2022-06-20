@@ -99,4 +99,5 @@ developing in R, RStudio will make typing easier and less error-prone.
 | --- | --- |
 | Function | A piece of code that does something specific stored as an object | 
 | Data frame  | A table of data stored as an object. Each column contains the same type of data |
+| Package aka Library | A package of R scripts that someone else has created to do something in R - like an add-on or expansion pack in a game |
 
