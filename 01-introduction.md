@@ -69,6 +69,10 @@ We will use RStudio IDE to write code, navigate the files on our computer,
 inspect the variables we are going to create, and visualize the plots we will
 generate. 
 
+![RStudio interface screenshot. Clockwise from top left: Source,
+Environment/History, Files/Plots/Packages/Help/Viewer,
+Console.](https://github.com/datacarpentry/R-ecology-lesson/blob/main/img/rstudio-screenshot.png)
+
 RStudio is divided into 4 "panes":
 
 -   The **Source** for your scripts and documents (top-left, in the default
