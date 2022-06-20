@@ -4,7 +4,7 @@ June 27 and July 4, 2022
 
 ### General Info
 
-These workshops will borrow heavily from Software Carpentry workshops (see [here](https://jcszamosi.github.io/2017-07-27-McMaster/)) but are aimed at learning how to use R for specific analyses that are common in the Sloboda Lab. You do not need to have any previous knowledge of R to participate. 
+These workshops will borrow heavily from [Software Carpentry](https://software-carpentry.org/) workshops (see [here](https://jcszamosi.github.io/2017-07-27-McMaster/)) but are aimed at learning how to use R for specific analyses that are common in the Sloboda Lab. You do not need to have any previous knowledge of R to participate. 
 
 **Requirements:** A laptop with running a Windows or Mac operating system on which you have administrative priviledges. Starting June 27th you must have all the required software installed. If you would like help installing any of this software, please attend the software installation party on June 20th after lab meeting. 
 
