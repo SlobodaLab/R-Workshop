@@ -86,7 +86,8 @@ running stats it's easiest to organize your data in an R Markdown file saved as 
 generate reports - you could even write your thesis using R Markdown!
 
 The main benefit of R Markdown for analysis is that all your code is contained in "Code Chunks" and everything that is not in a code chunk
-is ignored when you run your code. You can/should write notes between chunks explaining what each chunk is for. 
+is ignored when you run your code. You can/should write notes between chunks explaining what each chunk is for. You can tell R to ignore 
+something _inside_ a code chunk by putting a # to the left on the same line. 
 
 Learn more about R Markdown [here](https://rmarkdown.rstudio.com/lesson-1.html).
 
