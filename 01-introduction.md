@@ -1,11 +1,3 @@
----
-title: "Introduction"
-author: "Data Carpentry contributors"
-see [Data Carpentry R Ecology Lesson](https://datacarpentry.org/R-ecology-lesson/)
-editor_options:
-  markdown:
-    wrap: 80
----
 --------------------------------------------------------------------------------
 
 > ### Learning Objectives
