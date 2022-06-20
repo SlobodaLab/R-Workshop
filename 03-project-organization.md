@@ -70,7 +70,7 @@ Your project settings are saved and edited in the file `global.dcf` as shown bel
 ![](images/global-config.PNG)
 
 | | |
---------------
+| --- | --- |
 | data_loading | TRUE / FALSE : controls whether files in your `data\` folder are loaded automatically into RStudio |
 | data_ignore | add the folder `raw\` to prevent raw data files from being loading into RStudio |
 | cache_loading | TRUE / FALSE : change to FALSE to prevent previous outputs from being loaded |
