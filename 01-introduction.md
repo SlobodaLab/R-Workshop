@@ -1,20 +1,3 @@
-Adapted from [Data Carpentry R Ecology Lesson](https://datacarpentry.org/R-ecology-lesson/)
---------------------------------------------------------------------------------
-
- ### Learning Objectives
-
- -   Be able to explain what R and RStudio are, what they are used for, and how
-     they relate to each other.
- -   Describe the purpose of the RStudio Script, Console, Environment, and
-     Plots panes.
- -   Organize files and directories for a set of analyses as an R Project, and
-     understand the purpose of the working directory.
- -   Use the built-in RStudio help interface to search for more information on
-     R functions.
- -   Demonstrate how to provide sufficient information for troubleshooting with
-     the R user community.
---------------------------------------------------------------------------------
-
 ## What is R? What is RStudio?
 
 The term "`R`" is used to refer to both the programming language and the
@@ -91,3 +74,14 @@ One of the advantages of using RStudio is that all the information you need to
 write code is available in a single window. Additionally, with many shortcuts,
 autocompletion, and highlighting for the major file types you use while
 developing in R, RStudio will make typing easier and less error-prone.
+
+## Terminology
+
+
+| Term | Definition |
+| --- | --- |
+| Function | A piece of code that does something specific stored as an object | 
+| Data frame  | A table of data stored as an object. Each column contains the same type of data |
+| Package aka Library | A package of R scripts that someone else has created to do something in R - like an add-on or expansion pack in a game |
+
+Adapted from [Data Carpentry R Ecology Lesson](https://datacarpentry.org/R-ecology-lesson/)
