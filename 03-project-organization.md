@@ -1,5 +1,5 @@
 <div class="row video">
-   <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/cPe12V0Fbg8&t=28s/" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+   <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/cPe12V0Fbg8/" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 </div>
 
 ## Setting up a project
