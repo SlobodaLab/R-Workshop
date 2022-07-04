@@ -1,6 +1,6 @@
 ### Data Visualization with ggplot2
 
-------------
+
 
  ### Learning Objectives
 
@@ -9,7 +9,7 @@
  * Describe what faceting is and apply faceting in ggplot.
  * Modify the aesthetics of an existing ggplot plot (including axis labels and color).
  * Build complex and customized plots from data in a data frame.
---------------
+
 
 **`ggplot2`** is included in the **`tidyverse`** package and will be automatically loaded when you run `load.project()` 
 if you have load_libraries set to TRUE in your global.dcf config file. 
