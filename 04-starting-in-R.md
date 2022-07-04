@@ -167,7 +167,7 @@ function again. This produces a table with the counts for each factor level:
 summary(mouse_data$diet)
 ```
 
-# Data manipulation in the **`Tidyverse`** 
+## Data manipulation in the Tidyverse
 
 Bracket subsetting is handy, but it can be cumbersome and difficult to read,
 especially for complicated operations.
@@ -223,7 +223,7 @@ mouse_data %>%
 	filter(diet == "C")
 ```
 
-### Mutate
+## Mutate
 
 Frequently you'll want to create new columns based on the values in existing
 columns, for example to do unit conversions, or to find the ratio of values in two
