@@ -1,4 +1,4 @@
-# minimal
+# RWorkshop
 
 Welcome to ProjectTemplate!
 

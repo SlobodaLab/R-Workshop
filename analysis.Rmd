@@ -1,0 +1,58 @@
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(ProjectTemplate)
+load.project()
+```
+```{r}
+mouse_data <- read_csv("data/mouse_data.csv")
+
+str(mouse_data)
+
+#mouse_data[row,column]
+
+mouseIDs <- mouse_data[,"ID"]
+
+mouse_data$diet <- factor(mouse_data$diet)
+```
+
+```{r}
+str(mouse_data)
+
+mouse_data %>% 
+  str()
+
+mouse_data %>%
+  select(ID, acetate, butyrate, propionate, lactate)
+
+mouse_data %>%
+  filter(!is.na(glucose))
+
+mouse_data %>%
+  mutate(weight_bm_kg = weight_bm/1000)
+```
+
+```{r}
+mouse_data %>%
+  filter(diet %in% c("C", "HF"))%>%
+  ggplot()+
+  aes(
+    x = diet,
+    y = weight_gain,
+    colour = diet
+  ) +
+  geom_boxplot() + 
+  geom_point() + 
+  scale_colour_manual(values = c("black", "grey")) +
+  theme_classic()+
+  labs(title = "Weight gain by diet",
+       x = "Diet",
+       y = "Weight gain (g)")
+
+
+ggsave("figures/weight_gain.jpeg", width = 10, height = 8)
+```
+
+
