@@ -6,7 +6,6 @@
  * Use indexing to subset specific portions of data frames. 
  * Describe what a factor is.
  
-------------
 
 ## Loading our data
 
