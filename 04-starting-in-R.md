@@ -193,8 +193,8 @@ Pipes let you take
 the output of one function and send it directly to the next, which is useful
 when you need to do many things to the same dataset.  Pipes in R look like
 `%>%` and are made available via the **`magrittr`** package, installed automatically
-with the **`Tidyverse`**. If you use RStudio, you can type the pipe with <kbd>Ctrl</kbd>
-+ <kbd>Shift</kbd> + <kbd>M</kbd> if you have a PC or <kbd>Cmd</kbd> +
+with the **`Tidyverse`**. If you use RStudio, you can type the pipe with 
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd> if you have a PC or <kbd>Cmd</kbd> +
 <kbd>Shift</kbd> + <kbd>M</kbd> if you have a Mac.
 
 ## Selecting columns and filtering rows
