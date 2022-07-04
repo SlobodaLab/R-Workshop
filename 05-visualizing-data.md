@@ -72,15 +72,6 @@ mouse_data %>%
   containing a layer. If, instead, the `+` sign is added in the line before the
   other layer, **`ggplot2`** will not add the new layer and will return an error
   message.
-  
-  ```{r, ggplot-with-plus-position, eval=FALSE, purl=FALSE}
-# This is the correct syntax for adding layers
-plot +
-  geom_point()
-# This will not add the new layer and will return an error message
-plot
-  + geom_point()
-```
 
 ## Building your plots iteratively
 
@@ -131,3 +122,96 @@ mouse_data %>%
 - Any aesthetic changes (colour, shape, size, etc) that **map** to the dataframe (e.g. colour by diet) have to go **inside** the `aes()` funciton.
 - Any aesthetic changes that are **idependent** of the dataframe (e.g. alpha/transparency) go **outside** the `aes()` function
 
+## **`ggplot2`** themes
+
+Usually plots with white background look more readable when printed.
+Every single component of a `ggplot` graph can be customized using the generic
+`theme()` function, as we will see below. However, there are pre-loaded themes
+available that change the overall appearance of the graph without much effort.
+
+For example, we can change our previous graph to have a simpler white background
+using the `theme_bw()` function:
+
+```{r}
+mouse_data %>%
+  ggplot()+
+  aes(x = diet, y = weight_gain, colour = diet)+
+  geom_boxplot()+
+  geom_point(alpha = 0.7)+
+  theme_bw()
+```
+
+## Customization
+
+Now, let's change names of axes to something more informative
+and add a title to the figure:
+
+```{r}
+mouse_data %>%
+  ggplot()+
+  aes(x = diet, y = weight_gain, colour = diet)+
+  geom_boxplot()+
+  geom_point(alpha = 0.7)+
+  theme_bw()+
+  labs(title = "Weight gain by diet", 
+       x = "Weight gain", 
+       y = "Diet")
+```
+
+The axes have more informative names, but their readability can be improved by
+increasing the font size. This can be done with the generic `theme()` function:
+
+```{r}
+mouse_data %>%
+  ggplot()+
+  aes(x = diet, y = weight_gain, colour = diet)+
+  geom_boxplot()+
+  geom_point(alpha = 0.7)+
+  theme_bw()+
+  labs(title = "Weight gain by diet", 
+       x = "Weight gain", 
+       y = "Diet")+
+  theme(text = element_text(size=16))
+```
+
+If you like the changes you created better than the default theme, you can save
+them as an object to be able to easily apply them to other plots you may create:
+
+```{r}
+my_theme <- theme(axis.text.x = element_text(size = 12, colour = "grey20"),
+                  axis.text.y = element_text(size = 10, colour = "blue))
+```
+
+```{r}
+mouse_data %>%
+  ggplot()+
+  aes(x = diet, y = weight_gain, colour = diet)+
+  geom_boxplot()+
+  geom_point(alpha = 0.7)+
+  theme_bw()+
+  labs(title = "Weight gain by diet", 
+       x = "Weight gain", 
+       y = "Diet")+
+  my_theme
+```
+
+## Exporting plots
+
+The `ggsave()` function allows you to easily change the
+dimension and resolution of your plot by adjusting the appropriate arguments
+(`width`, `height`, and `dpi`):
+
+```{r}
+mouse_data %>%
+  ggplot()+
+  aes(x = diet, y = weight_gain, colour = diet)+
+  geom_boxplot()+
+  geom_point(alpha = 0.7)+
+  theme_bw()+
+  labs(title = "Weight gain by diet", 
+       x = "Weight gain", 
+       y = "Diet")+
+  my_theme
+  
+ggsave("weight_gain.jpg", width = 10, height = 8, units = "in")
+```
