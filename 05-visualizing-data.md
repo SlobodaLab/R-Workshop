@@ -154,8 +154,8 @@ mouse_data %>%
   geom_point(alpha = 0.7)+
   theme_bw()+
   labs(title = "Weight gain by diet", 
-       x = "Weight gain", 
-       y = "Diet")
+       y = "Weight gain", 
+       x = "Diet")
 ```
 
 The axes have more informative names, but their readability can be improved by
@@ -169,8 +169,8 @@ mouse_data %>%
   geom_point(alpha = 0.7)+
   theme_bw()+
   labs(title = "Weight gain by diet", 
-       x = "Weight gain", 
-       y = "Diet")+
+       y = "Weight gain", 
+       x = "Diet")+
   theme(text = element_text(size=16))
 ```
 
@@ -190,8 +190,8 @@ mouse_data %>%
   geom_point(alpha = 0.7)+
   theme_bw()+
   labs(title = "Weight gain by diet", 
-       x = "Weight gain", 
-       y = "Diet")+
+       y = "Weight gain", 
+       x = "Diet")+
   my_theme
 ```
 
