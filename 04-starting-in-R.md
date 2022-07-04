@@ -1,6 +1,3 @@
-
-------------
-
  ### Learning Objectives
 
  * Load external data from a .csv file into a data frame.
