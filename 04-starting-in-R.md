@@ -171,5 +171,74 @@ function again. This produces a table with the counts for each factor level:
 summary(mouse_data$diet)
 ```
 
+# Data manipulation in the **`Tidyverse`** 
+
+Bracket subsetting is handy, but it can be cumbersome and difficult to read,
+especially for complicated operations.
+
+The **`tidyverse`** package tries to address 3 common issues that arise when
+doing data analysis in R:
+
+1. The results from a base R function sometimes depend on the type of data.
+2. R expressions are used in a non standard way, which can be confusing for new
+   learners.
+3. The existence of hidden arguments having default operations that new learners are not aware
+   of.
+   
+  Next, we're going to learn some of the most common **`Tidyverse`** functions:
+
+- `select()`: subset columns
+- `filter()`: subset rows on conditions
+- `mutate()`: create new columns by using information from other columns
+
+## Pipes
+
+Pipes let you take
+the output of one function and send it directly to the next, which is useful
+when you need to do many things to the same dataset.  Pipes in R look like
+`%>%` and are made available via the **`magrittr`** package, installed automatically
+with the **`Tidyverse`**. If you use RStudio, you can type the pipe with <kbd>Ctrl</kbd>
++ <kbd>Shift</kbd> + <kbd>M</kbd> if you have a PC or <kbd>Cmd</kbd> +
+<kbd>Shift</kbd> + <kbd>M</kbd> if you have a Mac.
+
+## Selecting columns and filtering rows
+
+To select columns of a data frame, use `select()`. The first argument
+to this function is the data frame (`mouse_data`), and the subsequent
+arguments are the columns to keep.
+
+```{r}
+mouse_data %>%
+	select(mouseID, acetate, butyrate, propionate, lactate)
+```
+
+To select all columns *except* certain ones, put a "-" in front of
+the variable to exclude it.
+
+```{r}
+mouse_data %>%
+	select(-TNF)
+```
+
+To choose rows based on a specific criterion, use `filter()`:
+
+```{r}
+mouse_data %>%
+	filter(diet == "C")
+```
+
+### Mutate
+
+Frequently you'll want to create new columns based on the values in existing
+columns, for example to do unit conversions, or to find the ratio of values in two
+columns. For this we'll use `mutate()`.
+
+To create a new column of weight in kg
+
+```{r}
+mouse_data <- mouse_data %>%
+  mutate(weight_bm_kg = weight_bm / 1000)
+```
+
 
 Adapted from https://github.com/datacarpentry/R-ecology-lesson/blob/main/02-starting-with-data.Rmd
