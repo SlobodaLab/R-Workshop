@@ -207,7 +207,7 @@ Random effects can include a random intercept, random slope, or both.
 
 If you expect the effect of your independent variable to be the same within each group (e.g. each mouse) but the starting value to differ between groups you can include a random intercept in your model. 
 
-To include a random intercept, add  (1 | variable) to your model. 
+To include a random intercept, add  (1 \| variable) to your model. 
 
 ```{r}
 lm <- lmer(data = mouse_data, formula = weight ~ diet + (1 | mouseID)
