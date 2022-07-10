@@ -1,10 +1,10 @@
-#Basic Statistics in R
+# Basic Statistics in R
 
 This is a very basic introduction to using R to conduct statistics, but there are many other manipulations that can be made for more complex statistics. 
 
-##Before We Start...
+## Before We Start...
 
-###Let's review how to inspect your data. For more information, refer back to https://slobodalab.github.io/R-Workshop/04-starting-in-R.html. 
+### Let's review how to inspect your data. For more information, refer back to https://slobodalab.github.io/R-Workshop/04-starting-in-R.html. 
 
 * Size:
     * `dim(surveys)` - returns a vector with the number of rows in the first element,
@@ -27,11 +27,11 @@ This is a very basic introduction to using R to conduct statistics, but there ar
 	   content of  each column
     * `summary(surveys)` - summary statistics for each column
 
-###Let's also review variables and factors, For more information, refer back to https://slobodalab.github.io/R-Workshop/04-starting-in-R.html. 
+### Let's also review variables and factors, For more information, refer back to https://slobodalab.github.io/R-Workshop/04-starting-in-R.html. 
 Remember that each *column* holds one variable of interest and each *row* holds data for one animal/sample. When considering your variables to be used in your statistical tests, you'll need to make sure that the data for this variable is in a column and that each factor level in your variable is assigned as a factor (discrete variables). To ensure that any variable is a factor, use `data$columnname = factor(data$columnname)`. 
 
 
-###Let's also review some terms:
+### Let's also review some terms:
 
 | Term | Definition |
 | --- | --- |
@@ -39,13 +39,13 @@ Remember that each *column* holds one variable of interest and each *row* holds 
 | Argument  | The parameters provided to a function to perform operations. Each argument provides unique info to how the function works |
 | Package aka Library | A package of R scripts that someone else has created to do something in R - like an add-on or expansion pack in a game |
 
-###Some additional packages you'll want to install or load:
+### Some additional packages you'll want to install or load:
 
 car
 lmerTest
 
 
-##Learning Objectives
+## Learning Objectives
 - Arguments used by **most** statistical tests
 - Comparing the means of two groups 
   - Student’s t-test (parametric)
@@ -56,7 +56,7 @@ lmerTest
 - Comparing the means of more than two groups, more than 1 independent variable - Linear Models
 - Testing and visualizing your data
 
-##Arguments used by **most** statistical tests
+## Arguments used by **most** statistical tests
 
 Most statistical tests that we'll use (T test, ANOVA, non-parametric tests, linear models) will have two main arguments: 
 
@@ -87,7 +87,7 @@ This is the same structure for most statistical test functions, just replace `t.
 
 
 
-##Which test do we use? and When? 
+## Which test do we use? and When? 
 
 Statistical tests have assumptions about the data in order for the test to give reliable statistical output.
 
@@ -134,7 +134,7 @@ ggplot(data, aes(sample = weight_bm, color = factor(diet)))+
 #you can adjust the asthetics using other ggplot layers, see visualizing your data tutorial  
 ``` 
 
-###Variability Testing
+### Variability Testing
 
 **F-test** - `var.test(formula, data)`
 
@@ -157,7 +157,7 @@ ggplot(data, aes(sample = weight_bm, color = factor(diet)))+
   - not normally distributed
 
 
-##How to view the results of your statistical tests
+## How to view the results of your statistical tests
 
 When running the functions for the statistical tests above, the output will print in the console or inline in your code, but may not be saved as an object for you to call upon and look at further. Some outputs will not automatically print the entire statistical outputs from the test either, so you'll have to call them up manually. 
 
@@ -175,7 +175,7 @@ anova <- aov(data = mouse_data, formula = weight_bm ~ diet)
 summary(anova)
 ```
 
-##More than 1 independent variable? 
+## More than 1 independent variable? 
 
 If you need to conduct a statistical test with more than 1 indendent variable, you'll need to conduct a multiple linear regression using `lm`.
 
