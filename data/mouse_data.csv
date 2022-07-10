@@ -1,4 +1,4 @@
-ID,diet,genotype,weight_bm,weight_0,weight_10,weight_15,weight_18,weight_gain,glucose,n_fetus,insulin,TNF,IL6,acetate,propionate,butyrate,lactate,,,,
+mouseID,diet,genotype,weight_bm,weight_0,weight_10,weight_15,weight_18,weight_gain,glucose,n_fetus,insulin,TNF,IL6,acetate,propionate,butyrate,lactate,,,,
 WtC12,C,Wt,19,20.4,23.9,30.9,31.7,12.7,7,7,0.2117557,,,21.04,2.33,5.16,0.53,,,,
 WtC7,C,Wt,19.6,21.2,29.8,36.2,38.6,19,,8,0.2059053,,,11.48,1.14,2.04,0.35,,,,
 WtC17,C,Wt,20.35,20.09,24.2,31.7,33.36,13.01,,8,,,,13.29,1.88,2.84,0.2,,,,
