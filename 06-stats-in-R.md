@@ -203,7 +203,7 @@ Add random variables to your model using `|`.
 
 Random effects can include a random intercept, random slope, or both. 
 
-![](/images/07_models.png)
+![](images/07_models.png)
 
 If you expect the effect of your independent variable to be the same within each group (e.g. each mouse) but the starting value to differ between groups you can include a random intercept in your model. 
 
