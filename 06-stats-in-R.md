@@ -27,7 +27,7 @@ This is a very basic introduction to using R to conduct statistics, but there ar
 	   content of  each column
     * `summary(surveys)` - summary statistics for each column
 
-### Let's also review variables and factors, For more information, refer back to https://slobodalab.github.io/R-Workshop/04-starting-in-R.html. 
+### Let's also review variables and factors, For more information, refer back to (https://slobodalab.github.io/R-Workshop/04-starting-in-R.html)[https://slobodalab.github.io/R-Workshop/04-starting-in-R.html]. 
 Remember that each *column* holds one variable of interest and each *row* holds data for one animal/sample. When considering your variables to be used in your statistical tests, you'll need to make sure that the data for this variable is in a column and that each factor level in your variable is assigned as a factor (discrete variables). To ensure that any variable is a factor, use `data$columnname = factor(data$columnname)`. 
 
 
@@ -97,16 +97,16 @@ Statistical tests have assumptions about the data in order for the test to give 
 |  | 2 Groups | >2 Groups | >1 independent variable
 | --- | :---: | :---: | :---: |
 | Parametric | T-test | ANOVA | Linear models
-| Non-Parametric | Wilxocon test | Kruskal-Wallis test |
+| Non-Parametric | Wilcoxon test | Kruskal-Wallis test |
 
 **Parametric** - Follows all the assumptions of parametric testing about the *distribution* and *variability* of the data
 **Non-parametric** - Does not follow the assumptions, distribution and variability of the data are unknown
 
-**Technically, each of the parametric tests is a form of linear model. See this great infographic about how to use      linear models**: https://lindeloev.github.io/tests-as-linear/
+**Technically, each of the parametric tests is a form of linear model. See this great infographic about how to use      linear models**: (https://lindeloev.github.io/tests-as-linear/)[https://lindeloev.github.io/tests-as-linear/]
 
-##How to test the distribution and variability of your data?
+## How to test the distribution and variability of your data?
 
-###Normality Testing
+### Normality Testing
 
 **Shapiro-Wilk test** - `shapiro.test(data$glucose)` 
   
@@ -179,9 +179,7 @@ summary(anova)
 
 If you need to conduct a statistical test with more than 1 indendent variable, you'll need to conduct a multiple linear regression using `lm`.
 
-If you are interested in including random independent variables, you'll need to conduct a linear mixed model using `lmer` from the `lmerTest` package
-
-To add more independent variables or random variables, just add to the formula: 
+To add more independent variables, just add to the formula: 
 
 `y ~ x1*x2` OR `y ~ x1 + x2`
 
@@ -191,11 +189,27 @@ Use `*` for independent variables that you expect to interact
 
 Use `+` for independent variables that you do not expect to interact
 
-Use `|` for random variables
+## Controlling for repeated measures
 
-If you are interested in including random independent variables, you'll need to conduct a linear mixed model using `lmer`. 
+In repeated measures and longitudinal studies, the observations are clustered within a subject.  That means the observations, and their residuals, are not independent.  They’re correlated. 
 
+When you control for subject as a factor in the model, you literally redefine what a residual is.  Instead of being the distance between a data point and the average for everyone, it’s the distance between a data point and the mean for that subject.
 
+You could, theoretically, include Subject as a fixed factor, but that usually uses up most of the degrees of freedom.  If instead, you treat Subject as a random factor, you are still controlling for Subject, you’re still able to redefine the residuals and deal with non-independence, while using up only a few degrees of freedom.
 
+To include random variables, you need to conduct a linear mixed model using `lmer` from the `lme4` or `lmerTest` package. 
 
+Add random variables to your model using `|`. 
 
+Random effects can include a random intercept, random slope, or both. 
+
+![](/images/07_models.png)
+
+If you expect the effect of your independent variable to be the same within each group (e.g. each mouse) but the starting value to differ between groups you can include a random intercept in your model. 
+
+To include a random intercept, add  (1 | variable) to your model. 
+
+```{r}
+lm <- lmer(data = mouse_data, formula = weight ~ diet + (1 | mouseID)
+summary(lm)
+```
