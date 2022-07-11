@@ -175,6 +175,19 @@ anova <- aov(data = mouse_data, formula = weight_bm ~ diet)
 summary(anova)
 ```
 
+When you conduct an lm, the initial output does not include the full ANOVA table, you'll need to use `summary()`:
+
+```{r}
+lm <- lm(data = data, formula = weight_bm ~ diet)
+summary(lm)
+
+data %>% 
+  ggplot(aes(x = weight_bm, y = glucose))+
+  geom_point()+
+  stat_smooth(method = "lm")
+
+```
+
 ## More than 1 independent variable? 
 
 If you need to conduct a statistical test with more than 1 indendent variable, you'll need to conduct a multiple linear regression using `lm`.
@@ -210,6 +223,14 @@ If you expect the effect of your independent variable to be the same within each
 To include a random intercept, add  (1 \| variable) to your model. 
 
 ```{r}
-lm <- lmer(data = mouse_data, formula = weight ~ diet + (1 | mouseID)
+lm <- lmer(data = data, formula = glucose ~ weight_bm + (1 | diet))
 summary(lm)
+
+data %>% 
+  ggplot(aes(x = weight_bm, y = glucose, color = diet))+
+  geom_point()+
+  stat_smooth(method = "lm")
+
 ```
+
+
