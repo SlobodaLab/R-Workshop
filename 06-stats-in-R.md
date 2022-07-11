@@ -41,8 +41,9 @@ Remember that each *column* holds one variable of interest and each *row* holds 
 
 ### Some additional packages you'll want to install or load:
 
-car
-lmerTest
+- car
+- lmerTest
+- lme4
 
 
 ## Learning Objectives
